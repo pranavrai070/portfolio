@@ -4,12 +4,19 @@
 @import url(//db.onlinewebfonts.com/c/9a2bc11be56851dde98c1b49302cc21a?family=Gotham+Medium);
 @font-face {font-family: "Gotham Medium"; src: url("//db.onlinewebfonts.com/t/9a2bc11be56851dde98c1b49302cc21a.eot"); src: url("//db.onlinewebfonts.com/t/9a2bc11be56851dde98c1b49302cc21a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9a2bc11be56851dde98c1b49302cc21a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9a2bc11be56851dde98c1b49302cc21a.woff") format("woff"), url("//db.onlinewebfonts.com/t/9a2bc11be56851dde98c1b49302cc21a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9a2bc11be56851dde98c1b49302cc21a.svg#Gotham Medium") format("svg"); }/*Start global*/
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Poppins:ital,wght@0,500;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Poppins:ital,wght@0,500;0,600;1,400&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+}
+
+.portfolio-img4{
+    position: relative;
+    top:auto;
+    left:20px;
     
 }
 
@@ -20,9 +27,10 @@ html{
 }
 
 body{
+    font-family: 'Poppins', sans-serif;
     width: 100%;
     height: 100%;
-    background: black no-repeat center fixed;
+    background: black;
     background-size: cover;
 }
 
@@ -187,7 +195,7 @@ li{
 }
 
 .bar{
-    background: rgb(207, 204, 204);
+    background: rgb(255, 255, 255);
     width: 100%;
     height: 4px;
     border-radius: .8rem;
@@ -214,7 +222,7 @@ li{
     transform: rotate(-450deg) translateX(-.8rem);
 }
 .landing-text{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -226,9 +234,11 @@ li{
 }
 
 .landing-text h1{
-    font-size: 20rem;
-    font-family: 'Lato', sans-serif;
-    background: linear-gradient(#f0c800ce,#ff5a3dcb);
+    font-size: 15rem;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(217deg, rgba(255, 255, 255, 0.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgb(255, 255, 255), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(255, 255, 255, 0.8), rgba(0,0,255,0) 70.71%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 1rem;
@@ -236,6 +246,8 @@ li{
 }
 
 .landing-text h6{
+    color:rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
     font-size: 2.5rem;
     font-weight: 300;
 }
@@ -324,6 +336,7 @@ li{
 }
 
 .about-heading{
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     text-transform: uppercase;
     line-height: 0;
@@ -331,11 +344,13 @@ li{
 }
 .about-heading h1{
     font-size: 10rem;
+    color: white;
     opacity: .3;
     font-weight: 500;
 }
 
 .about-heading h6{
+    color: white;
     font-size: 2rem;
     font-weight: 400;
 }
@@ -364,6 +379,7 @@ li{
 
 .about-details{
     flex: 1;
+    color: white;
 }
 
 .social-media{
@@ -416,6 +432,26 @@ li{
     height: 10%;
     width: 15%;
     animation:move2 4s infinite;
+}
+.section-heading h1{
+    color: rgb(255, 255, 255);
+}
+.section-heading h1::after {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+    bottom: -1.3rem;
+}
+.section-heading h1::before, .section-heading h1::after {
+    content: '';
+    position: absolute;
+    /* bottom: -0.8rem; */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(17, 0, 255, 0.842);
+}
+.section-heading h6{
+    color: rgb(255, 255, 255);
 }
 
 .my-skills{
